@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96d82180-dfb9-4b1a-9c74-6b58824d2d05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/escola.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estudantes/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estudantes/migrations/0002_matricula.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estudantes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/escola/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/escola/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/escola/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/escola/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudantes/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/estudantes/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudantes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/estudantes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudantes/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/estudantes/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudantes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/estudantes/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,13 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +57,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -93,6 +105,8 @@
       <updated>1755396218005</updated>
       <workItem from="1755396219692" duration="890000" />
       <workItem from="1755397153312" duration="19000" />
+      <workItem from="1755407727626" duration="6152000" />
+      <workItem from="1755441225245" duration="12932000" />
     </task>
     <servers />
   </component>
