@@ -3,7 +3,7 @@ from estudantes.models import Estudante, Curso, Matricula
 from estudantes.validators import cpf_invalido, nome_invalido, celular_invalido
 
 
-class EstudanteSerializer(serializers.ModelSerializer):
+class EstudanteSerializerV1(serializers.ModelSerializer):
     class Meta:
         model = Estudante
         fields = ['id','nome','email','cpf','data_nascimento','celular']
@@ -17,6 +17,10 @@ class EstudanteSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({'celular':'O celular precisa seguir o modelo: 86 99999-9999 (respeitando traços e espaços)'})
         return dados
 
+class EstudanteSerializerV2(serializers.ModelSerializer):
+    class Meta:
+        model = Estudante
+        fields = ['id','nome','email','celular']
 
 class CursoSerializer(serializers.ModelSerializer):
     class Meta:
