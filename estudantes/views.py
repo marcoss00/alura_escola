@@ -6,6 +6,7 @@ from rest_framework import viewsets, generics, filters
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.throttling import UserRateThrottle
 from estudantes.throttles import MatriculaAnonRateThrottle
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 
 class EstudanteViewSet(viewsets.ModelViewSet):
@@ -49,6 +50,7 @@ class CursoViewSet(viewsets.ModelViewSet):
     """
     queryset = Curso.objects.all().order_by('id')
     serializer_class = CursoSerializer
+    permission_classes = [IsAuthenticatedOrReadOnly]
 
 
 class MatriculaViewSet(viewsets.ModelViewSet):
@@ -78,8 +80,9 @@ class ListaMatriculaEstudante(generics.ListAPIView):
     """
 
     def get_queryset(self):
-        queryset = Matricula.objects.filter(estudante_id=self.kwargs['pk']).order_by('id')
-        return queryset
+        if getattr(self, 'swagger_fake_view', False):
+            return Matricula.objects.none()
+        return Matricula.objects.filter(estudante_id=self.kwargs['pk']).order_by('id')
 
     serializer_class = ListaMatriculasEstudanteSerializer
 
@@ -93,7 +96,8 @@ class ListaMatriculaCurso(generics.ListAPIView):
     """
 
     def get_queryset(self):
-        queryset = Matricula.objects.filter(curso_id=self.kwargs['pk']).order_by('id')
-        return queryset
+        if getattr(self, 'swagger_fake_view', False):
+            return Matricula.objects.none()
+        return Matricula.objects.filter(curso_id=self.kwargs['pk']).order_by('id')
 
     serializer_class = ListaMatriculasCursoSerializer
